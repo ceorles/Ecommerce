@@ -11,7 +11,7 @@ class Product(models.Model):
     ]
 
     stock = models.BooleanField(choices=stockOption, default=False, null=True)
-    image_url = models.URLField(null=True)
+    image_url = models.URLField(upload_to='products/', null=True, blank=True)
 
     def __str__(self):
         return self.name
