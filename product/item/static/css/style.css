@@ -45,9 +45,20 @@ main {
 
 .navigationBar nav a {
     font-size: 30px;
-    color: #6D4C41;
     text-decoration: none;
+    color: #6D4C41;
     margin-left: 52px;
+    transition: ease-in-out .5;
+}
+
+.navigationBar nav a:hover {
+    border-bottom: #FF6F91 2px solid;
+    color: #FF6F91;
+}
+
+.navigationBar nav a.active {
+    border-bottom: #FF6F91 2px solid;
+    color: #FF6F91;
 }
 
 /* Product */
