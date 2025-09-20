@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Pink & Pastry{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Feel the sweetness in every bite, create memories in every slice.</h1>
+            <p>
+            At Pink & Pastry, cakes aren’t just desserts—they’re heartfelt creations
+            made to brighten your special moments. Every slice is carefully baked with
+            premium ingredients, blended with love, and designed to look as beautiful
+            as it tastes. From pastel dream cakes to elegant classics, our pastries
+            are crafted to match your celebrations and make memories sweeter.
+            </p>
+            <p>
+            Whether it’s a birthday, wedding, or a simple treat-yourself day, our
+            cakes bring joy, comfort, and indulgence to every table. Because here at
+            Pink & Pastry, we believe sweetness should be felt, shared, and
+            remembered.
+            </p>
+            <button class="landingBtn">Shop now</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="{% static 'images/cake.png' %}" alt="Strawberry Cheesecake">
+        </div>
+    </section>
+{% endblock %}

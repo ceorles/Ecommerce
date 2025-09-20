@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'navbar/home.html' %}
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <div>
+            <span>Terms of Use | Privacy Policy</span>
+        </div>
+        <div>
+            <span>Copyright &copy;2025, Pink & Pastry</span>
+        </div>
+    </footer>
+</body>
+</html>
